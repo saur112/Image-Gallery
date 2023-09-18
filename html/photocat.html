@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/photocat.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+  <title>Snapshot</title>
+  <style>
+    .card-body img:hover{
+      
+			z-index: 1;
+			transform: scale(1.10);
+			box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+		
+    }
+    /* body{
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+    }
+    body::before{
+      background-image: url(../photos/wolfgang-hasselmann-WQdcQltFuI8-unsplash.jpg)  ;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 300%;
+      z-index: -1;
+      opacity: 0.3;
+    } */
+    .nav-left {
+      background-color: rgba(24, 24, 24, 0.795);
+    }
+
+    .nav-left ul {
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+    }
+   #random{
+      display: block;
+      margin: auto;
+      width: 60%;
+      /* height: 100%; */
+    }
+
+    .nav-left ul li {
+
+      list-style: none;
+      margin: 10px 25px;
+      padding: 10px 15px;
+
+    }
+
+    #l1 {
+      margin: 10px 17px;
+    }
+
+    #l2 {
+      margin: 10px 1px;
+      padding: 10px 1px;
+    }
+
+    .a1 {
+      margin: 10px 21px;
+      text-decoration: none;
+      color: rgb(86, 154, 231);
+      font-size: 17px;
+    }
+
+    .a2 {
+      margin: 10px 5px;
+      text-decoration: none;
+      color: rgb(86, 154, 231);
+      font-size: 17px;
+    }
+
+    .navbar-brand {
+      text-decoration: none;
+      padding: 13px 15px;
+    }
+
+    a:hover {
+      color: rgb(16, 49, 155);
+    }
+
+    .search input {
+      margin: 25px 70px;
+      padding: 0px 20px;
+      width: 1200px;
+      border: 2px solid rgb(32, 31, 31);
+      border-radius: 7px;
+      height: 35px;
+    }
+
+    .cat {
+      display: flex;
+    }
+
+    .dow {
+      display: flex;
+      float: right;
+      margin-right: 30px;
+      margin-top: -10px;
+    }
+
+    .dow h3 {
+      margin-right: 18px;
+
+    }
+
+    .dow button {
+      height: 30px;
+    }
+    .width{
+      margin: 15px;
+      /* height: 20px; */
+      margin-left: 300px;
+     
+    }
+    .width input{
+      padding: 7px;
+      width: 400px;
+    }
+    p{
+      margin-left: 250px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navigation max-width-1 m-auto">
+    <div class="nav-left">
+      <!-- <a href="/">
+            <span><img src="img/logo.png" width="94px" alt=""></span>
+        </a> -->
+      <ul>
+        <a class="navbar-brand" style="font-size: 23px;" href="#">
+          <img src="../photos/logo-vertical.png" alt="" width="30" height="34" class="d-inline-block align-top">
+          Snapshot</a>
+          <li id="l1"><a class="a1 " href="../html/website_using_bootstrap.html">Home</a></li>
+          <li id="l2"><a class="a2" href="../html/help.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="search">
+      <input id="myinput" type="text" placeholder="Search..." class="form-control"><br><br>
+    </div>
+    <div class="cat">
+      <h2 style="margin-left: 35px;">Category</h2>
+    </div>
+    <!-- <div class="dow"> <h3>To downlode random photos</h3>
+    <button>download</button></div>
+     -->
+    <div class="container" style="margin: 40px 0px; margin-left: 35px;">
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/anime/anime1 (2).jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/image.html">
+              <h2>Anime</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/nature/nature1.png" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/nature.html">
+              <h2>Nature</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/food/food1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/food.html">
+              <h2>Food</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/festive/festive1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/festival.html">
+              <h2>Festival</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin: 40px 0px; margin-left: 35px;">
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/ld/1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/landscape.html">
+              <h2>Landscape</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/sp/14.jpeg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/sports.html">
+              <h2>Sports</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/wl/1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/wildlife.html">
+              <h2>Wildlife</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/bnw/1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/b&w.html">
+              <h2>Black&White</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin: 40px 0px; margin-left: 35px;">
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/flower/edward-howell-eWrJQFRhP88-unsplash.jpg" style="height: 300px;" width="250px"
+            alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/flower.html">
+              <h2>Flower</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/bird/photo-1611275838201-0b6f8acbcc39.jpg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/bird.html">
+              <h2>Bird</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/potrait/remrandt-self-portrait1.jpg" style="height: 300px;" width="250px" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/potrait.html">
+              <h2>Potrait Photos</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgbx">
+          <img src="../photos/archi/varshesh-joshi-qaZofx5ePm8-unsplash.jpg" style="height: 300px;" width="250px"
+            alt="">
+        </div>
+        <div class="content">
+          <div>
+            <a href="../html/architect.html">
+              <h2>Architecture</h2>
+            </a>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim omnis quo cum</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <hr>
+      <div class="card-header "
+        style="font-size: large; display:flex;align-items: center; justify-content: center;margin: 10px 10px; background-color: rgb(192, 219, 228);">
+        Featured
+      </div>
+      <hr>
+      <div class="card-body" style="margin:auto; display: block; width:70%; ">
+        <h5 class="card-title"
+          style="font-family: 'Langar', cursive; font-size: 30px;margin:auto; display: block; width:70%;"> To Downlode
+          Random Photos with pixels</h5>
+          <br>
+          <form id="form"><div class="width">
+            <input class="form-control" type="number" placeholder="hight" id="height">
+          </div>
+          <div class="width">
+            <input class="form-control" type="number" placeholder="width" id="width">
+          </div>
+          
+        <!-- <p class="card-text " >With supporting text below as a natural lead-in to additional content.</p> -->
+        <div >
+          <input type="submit" value="Get Image" style="margin-left: 450px; height:26px;cursor: pointer;border: 1px solid black; border-radius: 7px;">
+        </div>
+        <br>
+      </form>
+    <div id="random"><img id="imag"></div> 
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div style="background-color: gray; height: 85px; ">
+      <footer class="container ">
+        <p class="float-end "><a href="#">Back to top</a></p>
+        <p>© 2017-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    </div>
+    <!-- <script>
+		$(document).ready(function () {
+			$("#myinput").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#container div").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+				});
+			});
+		});
+
+
+  </script> -->
+  <script >
+    var form= document.getElementById('form')
+    form.addEventListener('submit',function(e){
+      e.preventDefault()
+      var height=document.getElementById('height').value
+      var width=document.getElementById('width').value
+      // var img = `<img src ="https://source.unsplash.com/random/${height}x${width}"/>
+      // `
+      var imagee=document.getElementById('imag')
+      imagee.src=`https://source.unsplash.com/random/${height}x${width}` 
+    })
+  </script>
+</body>
+
+</html>
